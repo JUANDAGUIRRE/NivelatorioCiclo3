@@ -1,0 +1,156 @@
+
+*{
+    color: rgb(32, 32, 32);
+}
+
+.services_title h2{
+    text-align: center;
+    color: #2D2B2A;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.service_container{
+    width: 100%;
+    display: flex;
+    padding: 0px 20px 0px 70px ;
+    font-family: Helvetica;
+    margin-bottom: 50px;
+    
+}
+.service_container_responsive{
+    display: none;
+}
+
+.img_service{
+    width: 50%;
+    text-align: center;
+    
+}
+
+.img_service img{
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;   
+}
+.text_service{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+
+.text_service h2{
+    font-size: 30px;
+    text-align: center;
+    color: #2D2B2A;
+    margin-bottom: 30px;
+    
+}
+.text_service p{
+    width: 80%;
+    font-size: 16px;
+    line-height: 1.5em;
+    color:#2d2b2abe;
+    text-align: justify;
+}
+
+.btn_service{
+    width: 200px;
+    height: 50px;
+    background-color: #D8B394;
+    border-radius: 5px;
+    border: none;
+    color: #024961;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 60px;
+    font-weight: bold;
+}
+.text_service button:hover{
+    background-color: #2D2B2A;
+    color: white;
+    transition: .5s;
+
+}
+
+::selection {
+    background: #D8B394;
+    color: #fff;
+}
+
+/*///////////////////////////////////vista tablet////////////////////////////////////////////////*/
+/*horizontal*/
+@media (max-width: 1024px){
+    .img_service img{
+        width: 400px;
+        height: 300px;  
+    }
+
+}
+
+@media (max-width: 810px){
+    .service_container{
+        display: none;
+    }
+    .service_container_responsive{
+        width: 100%;
+        display: block;
+    }
+    .img_service{
+        width: 100%;  
+        
+    }
+    .img_service img{
+        width: 600px;
+        height: 400px;
+       
+    }
+    .text_service{
+        width: 100%;      
+    }
+    .text_service p{
+        margin-bottom: 40px;
+    }
+    .btn_service{
+        margin: 50px 0;
+    }
+}
+
+/*///////////////////////////////////vista smartphone////////////////////////////////////////////////*/
+
+@media (max-width: 414px){
+    .services_title h2{
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+    .service_container{
+        display: none;
+    }
+    .service_container_responsive{
+        width: 100%;
+        display: block;
+    }
+    .text_service h2{
+        font-size: 22px; 
+        margin-bottom: 10px;
+    }
+ 
+    .img_service img{
+        width: 350px;
+        height: 250px;  
+    }
+    .text_service p{
+        font-size: 16px;
+    }
+    .btn_service{
+        width: 165px;
+        height: 40px;
+        font-size: 14px;
+        letter-spacing: 0.2em;
+        margin-top: 30px;
+    }
+}
+

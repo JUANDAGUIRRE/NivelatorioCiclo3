@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.parallax{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../imagenes/img/medicinaVeterinaria\ Forense.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    
+    
+}
+.parallax:before{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background-color: #024961;
+    opacity: 0.2;
+    position: absolute;
+    
+}
+
+.parallax_content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    
+}
+
+.title{ 
+    width: 50%;
+    font-size: 40px;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.7em;
+    z-index: 1;
+    margin-bottom: 20px;
+  
+}
+
+.subtitle{
+    font-size: 22px;
+    font-family: helvetica;
+    color: #fff;
+    z-index: 1;
+    font-weight: 300;
+    color: white;
+    
+}
+.btn{
+    z-index: 1;
+    
+}
+
+.call_to_action{
+    width: 200px;
+    height: 55px;
+    background-color: #D8B394;
+    border-radius: 50px;
+    border: none;
+    color: #024961;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 60px;
+    font-weight: bold;
+    
+    
+}
+.call_to_action:hover{
+    background-color: #024961;
+    color: white;
+    transition: .5s;
+
+}
+::selection {
+    background: #D8B394;
+    color: #fff;
+}
+.container_service{
+    width: 80%;
+    margin: 30px auto;  
+    font-family: helvetica;
+    color:#2d2b2a;
+    line-height: 1.5em;
+    
+}
+
+.container_service h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.container_service1{
+    width: 100%;
+    display: flex;
+}
+
+.container_service1 article{
+    width: 50%;
+}
+
+.container_service1 img{
+    width: 90%;
+    height: 380px;
+    border-radius: 10px;
+
+}
+.container_service1 h2{
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+.container_service1 p{
+    width: 90%;
+    text-align: justify;
+    line-height: 1.5em;
+    color:#2d2b2a;
+    
+}
+
+
+.planes{
+    display: flex;
+       
+}
+.plan1{
+    margin-right: 60px;
+}
+.plan1, .plan2{
+   text-align: center;
+    
+}
+.plan1 h3,.plan2 h3{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.plan1 p,.plan2 p{
+    text-align: justify;
+    font-size: 16px;
+    
+}
+
+
+.title_planes{
+    text-align: center;
+    margin-top: 40px;
+}
+.title_planes h3{
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.title_planes P{
+    margin-bottom: 40px;
+}
+
+/*tarjetas*/
+
+.planes_service_1{
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-column-gap: 40px; 
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.box{
+    height: 350px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0 20px 25px -10px rgb(0, 0, 0, 0.5);
+}
+.box:hover{
+    transform: matrix3d();/*///////buscar efecto///////////*/
+    transition: .8s;
+    cursor: default;
+}
+.box img{
+    width: 70px;
+    margin-bottom: 15px;
+}
+.box h4{
+    font-size: 18px;
+    text-transform: uppercase;
+   
+}
+.p_box{
+    margin-bottom: 20px;
+}
+
+.p2_box{
+    font-size: 18px;
+    color: #024961c7;
+}
+.p3_box{
+    font-size: 16px;
+    color: #024961c7;
+}
+.btn_service{
+    width: 120px;
+    height: 45px;
+    background-color: #024961;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 40px;
+
+}
+.btn_service:hover{
+    background-color: #D8B394;
+    color: #024961;
+    transition: .5s;
+
+}
+
+
+
+
+

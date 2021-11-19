@@ -1,0 +1,239 @@
+/*-- ----- -----NAVEGADOR PRINCIPAL ----- ----- ----- */
+
+
+/* AGREGUE ESTO */
+
+*{
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+
+header {
+  background-color: #f5f3f3;
+  height: 130px;
+  position: fixed;
+  width: 100%;
+  top: 60px;
+  z-index: 5 !important;
+font-family: 'Oswald', sans-serif;
+font-size: 20px;
+padding: 0;
+}
+
+.logotipo{
+  width: 130px;
+  height: 130px;
+}
+
+header .contenedor {
+	display: flex;
+	align-items: center;
+
+  width: 100%;
+  
+}
+
+
+
+nav li{
+    line-height: 3rem;
+}
+
+/* AGREGUE ESTO
+
+  agregue el --li--
+  la position y el top
+*/
+nav ul  li ul {
+  position: absolute;
+  top:40px;
+    display: none;
+    left: -20px;
+
+}
+
+nav > ul{
+    background-color: #f5f3f3;
+    width: 100%;
+}
+
+/* AGREGUE ESTO */
+nav li:hover > ul{
+  display: block;
+  position: absolute;
+ 
+}
+
+
+
+nav a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 0 2.3em;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    background: rgb(27, 69, 131);
+    color: rgb( 216 , 179 , 148);
+    
+   
+}
+
+.menuprincipal > li> a{
+  display: block;
+}
+
+.menuprincipal > li{
+  display: inline-block;
+  position: relative;
+}
+
+
+nav .submenu{
+  position: absolute;
+  background: #d40505;
+  color: black;
+}
+
+.submenu li a{
+  display: block;
+  padding: 15px;
+  color: black;
+}
+/*-- ----- ---
+header nav a {
+  margin-left: 40px;
+	text-decoration: none;
+	margin-right: 20px;
+  font-size: 20px;
+
+}
+
+
+
+
+header nav a:hover{
+  background-color: rgb(223, 17, 17);
+
+}
+
+-- */
+header nav img{
+  margin-left: 80px;
+}
+
+
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+  }
+
+
+  .iconos_redes{
+    position: absolute;
+    right: 10%;
+    top: 40%;
+  }
+ .iconos_redes i{
+   font-size: 32px;
+   color: rgb( 2 , 73 , 97);
+   margin-right: 15px;
+   cursor: pointer;
+   
+ }
+
+ @media(max-width: 810px) {
+
+          header {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        width: 99%;
+        height: 100px;
+          }
+
+          .contenedor {
+        padding: 0px;
+            justify-content: space-between;
+            margin: 0;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 10%;
+           
+            
+          }
+          .logotipo{
+        
+            top: 0;
+            left: -140px;
+          
+          }
+
+          .iconos_redes{
+            display: none;
+          }
+
+        
+        
+        nav ul li a{
+          margin: 5px;
+          padding: 6px 8px;
+          
+        }
+}
+
+@media(max-width: 410px) {
+  header {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 90%;
+   height: 10px;
+   margin-top: -10px;
+
+      }
+
+      .contenedor {
+    padding: 0px;
+        justify-content: space-between;
+        margin: 0;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 5%;
+        font-size: 9px;
+      }
+      .logotipo{
+    
+        top: 0;
+        left: -140px;
+      
+      }
+
+      .iconos_redes{
+        display: none;
+      }
+
+    
+    
+    nav ul li a{
+      margin: 5px;
+      padding: 6px 8px;
+      
+    }
+    .logotipo{
+      visibility: hidden;
+
+
+      
+    
+    }
+}
